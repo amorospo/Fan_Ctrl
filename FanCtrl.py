@@ -16,8 +16,8 @@ maxTemp = 50 #definisco la temperatura massima
 delta = 5 #definisco di quanti gradi voglio abbassare la temperatura prima di spegnere la ventola
 
 GPIO.setmode(GPIO.BCM) #imposto la lettura dello schema della GPIO a BCM
-GPIO.setup(fanPin, GPIO.OUT) #dico al pin della ventola che deve lavorare in output
 GPIO.setwarnings(False) #disabilito i messaggi di stato
+GPIO.setup(fanPin, GPIO.OUT) #dico al pin della ventola che deve lavorare in output
 
 while True: #eseguo un ciclo infinito
 
