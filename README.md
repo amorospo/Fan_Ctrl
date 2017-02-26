@@ -4,7 +4,7 @@ Per installare:
 
 sudo -s<br>
 cd /var/www/MyScripts<br>
-git clone https://github.com/amorospo/FanCtrl.git<br>
+git clone https://github.com/amorospo/Fan_Ctrl.git<br>
 mv FanCtrl/FanCtrl.service /etc/systemd/system/FanCtrl.service<br>
 nano /var/www/MyScripts/FanCtrl.py
 
