@@ -4,9 +4,9 @@ Per installare:
 
 sudo -s<br>
 cd /var/www/MyScripts<br>
-git clone https://github.com/amorospo/FanCtrl.git<br>
-mv FanCtrl/FanCtrl.service /etc/systemd/system/FanCtrl.service<br>
-nano /var/www/MyScripts/FanCtrl.py
+git clone https://github.com/amorospo/Fan_Ctrl.git<br>
+mv Fan_Ctrl/FanCtrl.service /etc/systemd/system/Fan_Ctrl.service<br>
+nano /var/www/MyScripts/Fan_Ctrl/FanCtrl.py
 
 e modificare le variabili a proprio piacimento (pin, temperature max e min)<br>
 
