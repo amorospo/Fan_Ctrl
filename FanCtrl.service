@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python2 /var/www/MyScripts/Fan_Ctrl/FanCtrl.py
+ExecStart=/usr/bin/python /var/www/MyScripts/Fan_Ctrl/FanCtrl.py
 KillMode=process
 
 [Install]
