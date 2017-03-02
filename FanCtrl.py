@@ -12,10 +12,11 @@
 import RPi.GPIO as GPIO #importo i moduli di GPIO
 import time, subprocess, string #importo altri moduli utili
 
-############### CHOOSE YOUR PERSONAL SETTINGS!!! ###############
+############### EDIT HERE YOUR PERSONAL SETTINGS!!! ###############
 fanPin = 21 #definisco la porta GPIO che usero' per attivare il transistor
 maxTemp = 50 #definisco la temperatura massima
 delta = 5 #definisco di quanti gradi voglio abbassare la temperatura prima di spegnere la ventola
+############### EDIT HERE YOUR PERSONAL SETTINGS!!! ###############
 
 GPIO.setmode(GPIO.BCM) #imposto la lettura dello schema della GPIO a BCM
 GPIO.setwarnings(False) #disabilito i messaggi di stato
