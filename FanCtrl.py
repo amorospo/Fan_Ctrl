@@ -5,12 +5,14 @@
 #Email: murdercode@gmail.com
 #Website: www.inforge.net
 
-######Modificato da amorospo######
-#########amorospo@yahoo.it########
+####### Modified by amorospo #######
+######### amorospo@yahoo.it ########
 
+#Import libraries
 import RPi.GPIO as GPIO #importo i moduli di GPIO
 import time, subprocess, string #importo altri moduli utili
 
+############### CHOOSE YOUR PERSONAL SETTINGS!!! ###############
 fanPin = 21 #definisco la porta GPIO che usero' per attivare il transistor
 maxTemp = 50 #definisco la temperatura massima
 delta = 5 #definisco di quanti gradi voglio abbassare la temperatura prima di spegnere la ventola
