@@ -16,6 +16,7 @@ import time, subprocess, string #importo altri moduli utili
 fanPin = 21 #definisco la porta GPIO che usero' per attivare il transistor
 maxTemp = 50 #definisco la temperatura massima
 delta = 5 #definisco di quanti gradi voglio abbassare la temperatura prima di spegnere la ventola
+lapse = 30 # time lapse for checking cpu temperature
 ############### EDIT HERE YOUR PERSONAL SETTINGS!!! ###############
 
 GPIO.setmode(GPIO.BCM) #imposto la lettura dello schema della GPIO a BCM
@@ -34,4 +35,4 @@ while True: #eseguo un ciclo infinito
         elif temp < maxTemp - delta: #se la temperatura si e' abbassata a sufficienza
                 GPIO.output(fanPin, 0) #riapro il circuito disattivando il transistor
 
-        time.sleep(15) #attendo 15 secondi
+        time.sleep(lapse) #attendo 30 secondi
